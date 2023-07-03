@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax1 {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.parallax2 {
+    background-image: url("https://wallpaperaccess.com/full/508751.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.scrit {
+    height: 500px;
+    background-color: white;
+    font-size: 200%;
+    text-align: center;
+}
