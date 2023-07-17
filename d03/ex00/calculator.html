@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="calculator.css">
+    <head>
+        <div class="heading">
+        Calculator!!
+        </div>
+    </head>
+    <body>
+        <table class="calculator">
+            <tr>
+                <td>
+                    <input type="text" id="firstnum">
+                    <select id="operator">
+                        <option value="add">+</option>
+                        <option value="sot">-</option>
+                        <option value="mol">*</option>
+                        <option value="div">/</option>
+                    <input type="text" id="secondnum">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Calculate me baby!" onclick="calculate()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="result">
+                        <h5 class="res" id="risu"> </h5>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <script src="calculator.js"> </script>
+    </body>
+</html>
