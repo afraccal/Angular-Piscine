@@ -221,7 +221,7 @@ let data = [{
   }]
 
   let card = document.getElementById("card") as HTMLDivElement;
-  let count = 0;
+
   let i : number;
   
   for(i = 0; i < data.length; ++i)
@@ -241,35 +241,27 @@ let data = [{
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementsByClassName("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-var add = document.getElementsByClassName("adding")[0];
-
 // When the user clicks the button, open the modal 
-btn!.onclick = function() {
+function temp_test()
+{
   modal!.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+function closing() {
   modal!.style.display = "none";
 }
-
-let counter = document.getElementById(".counter");
-
+let count = 0;
 function add_to_cart() {
-  count++;
-  let cart_count = document.querySelector(".counter") as HTMLElement | null;
-  if (cart_count)
-  {
-    cart_count.innerHTML = String(counter);
-    if (modal)
-      modal.style.display = "none";
-  }
-
+  console.log(count);
+  count++
+  document.querySelector(".counter").innerHTML = count;
+  modal!.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it

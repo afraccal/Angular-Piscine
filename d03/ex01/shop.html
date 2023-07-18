@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="cart_icon" id="icon">&#128722;
-        <div id="counter">0</div>
+        <div class="counter">0</div>
     </div>
     <div class="cardcontainer">
         <div class="inside" id="card"> <br>
@@ -17,18 +17,18 @@
             <div class="cardprice"></div> <br>
             <div class="carddescription"></div> <br>
             <div class="cardcategory"></div><br>
-            <button id="myBtn">Add to cart</button>
+            <button onclick="temp_test()" class="myBtn">Add to cart</button>
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <span class="close">&times;</span>
-                        <div class="add" onclick="add_to_cart()">
+                    <span class="close" onclick="closing()">&times;</span>
+                        <div class="add">
                         <h2>Add to the cart?</h2>
                         </div>
                     </div>
                     <div class="modal-body">
                     <p>Click on the button for add the object in the cart</p>
-                    <button style="font-size:24px" class="adding">Add &#128722;</button>
+                    <button style="font-size:24px" class="adding" onclick="add_to_cart()">Add &#128722;</button>
                     </div>
                     <div class="modal-footer">
                     <h3>Thanks for choosing us!!</h3>
