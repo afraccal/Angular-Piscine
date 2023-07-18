@@ -227,8 +227,8 @@ let data = [{
   for(i = 0; i < data.length; ++i)
   {
     let clone = card.cloneNode(true) as HTMLDivElement;
-
-    clone.querySelector("#card_img")!.src = data[i].image;
+    let test = clone.querySelector("#card_img") as HTMLImageElement;
+    test.src = data[i].image;
     clone.querySelector(".cardprice")!.innerHTML = String(data[i].price);
     clone.querySelector(".carddescription")!.innerHTML = data[i].description;
     clone.querySelector(".cardcategory")!.innerHTML = data[i]. category;
@@ -258,9 +258,8 @@ function closing() {
 }
 let count = 0;
 function add_to_cart() {
-  console.log(count);
   count++
-  document.querySelector(".counter").innerHTML = count;
+  document.querySelector(".counter")!.innerHTML = String(count);
   modal!.style.display = "none";
 }
 
@@ -271,3 +270,28 @@ window.onclick = function(event) {
   }
 }
 
+let view = "card";
+
+function change(){
+  const card_cont = document.querySelector(".cardcontainer");
+  const switcher =  document.querySelector(".switcher");
+  let cards = document.querySelectorAll(".inside");
+  if(switcher!.innerHTML == "List")
+  {
+  for (let i = 0; i < cards.length ; i++)
+    {
+      cards[i].classList.add("riga");
+      cards[i].classList.remove("column");
+    }
+    switcher!.innerHTML = "Cards"
+  }
+  else if(switcher!.innerHTML == "Cards")
+  {
+  for (let i = 0; i < cards.length ; i++)
+    {
+      cards[i].classList.add("column");
+      cards[i].classList.remove("riga");
+    }
+    switcher!.innerHTML = "List"
+  }
+}

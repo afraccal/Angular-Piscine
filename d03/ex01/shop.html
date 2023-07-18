@@ -2,21 +2,35 @@
 <html>
 <link rel="stylesheet" href="shop.css">
 <head>
-    <h1 class="heading"> Welcome to thriftstore!!</h1>
+    <div class="heading"> 
+        <h1>Welcome to the thriftstore!!</h1>
+        <p> Have fun!!</p>
+    </div>
 </head>
 <body>
-    <div class="cart_icon" id="icon">&#128722;
-        <div class="counter">0</div>
-    </div>
+    <div class="navbar">
+        <button class="switcher" onclick="change()">List</button>
+        <div class="right">
+            <div class="menu">
+                    <div class="cart_icon" id="icon">&#128722;
+                        <div class="counter">0</div>
+                        <div class="block">
+                            <h6>Menu item</h6>
+                            <h6>Menu item2</h6>
+                        </div>
+                </div>
+            </div>
+        </div>
+      </div>
     <div class="cardcontainer">
-        <div class="inside" id="card"> <br>
+        <div class="inside" id="card">
             <div class="imagine">
                 <img src="" id="card_img" alt="" width="30%">
             </div>
-            <div class="cardtitle"></div> <br>
-            <div class="cardprice"></div> <br>
-            <div class="carddescription"></div> <br>
-            <div class="cardcategory"></div><br>
+            <div class="cardtitle"></div> 
+            <div class="cardprice"></div> 
+            <div class="carddescription"></div> 
+            <div class="cardcategory"></div> 
             <button onclick="temp_test()" class="myBtn">Add to cart</button>
             <div id="myModal" class="modal">
                 <div class="modal-content">
@@ -36,6 +50,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <h2>Thanks for choosing us</h2>
     </div>
 </body>
 <script src=shop.js> </script>
