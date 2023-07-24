@@ -1,0 +1,11 @@
+<body>
+    <div class="container">
+        <div class="card" *ngFor="let item of data">
+            <h2>{{item.title}}</h2>
+            <div class="image"><img src="{{item.image}}"></div>
+            <p>{{item.description}}</p>
+            <h5>{{item.price}} $</h5>
+            <h4>{{item.category}}</h4>
+        </div>
+    </div>
+</body>
