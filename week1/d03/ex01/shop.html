@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="shop.css">
+<head>
+    <div class="heading"> 
+        <h1>Welcome to the thriftstore!!</h1>
+        <p> Have fun!!</p>
+    </div>
+</head>
+<body>
+    <div class="navbar">
+        <button class="switcher" onclick="change()">List</button>
+        <div class="right">
+            <div class="menu">
+                    <div class="cart_icon" id="icon">&#128722;
+                        <div class="counter">0</div>
+                        <div class="block">
+                            <h6>Menu item</h6>
+                            <h6>Menu item2</h6>
+                        </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div class="cardcontainer">
+        <div class="inside" id="card">
+            <div class="imagine">
+                <img src="" id="card_img" alt="" width="30%">
+            </div>
+            <div class="cardtitle"></div> 
+            <div class="cardprice"></div> 
+            <div class="carddescription"></div> 
+            <div class="cardcategory"></div> 
+            <button onclick="temp_test()" class="myBtn">Add to cart</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="close" onclick="closing()">&times;</span>
+                        <div class="add">
+                        <h2>Add to the cart?</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                    <p>Click on the button for add the object in the cart</p>
+                    <button style="font-size:24px" class="adding" onclick="add_to_cart()">Add &#128722;</button>
+                    </div>
+                    <div class="modal-footer">
+                    <h3>Thanks for choosing us!!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Thanks for choosing us</h2>
+    </div>
+</body>
+<script src=shop.js> </script>
+</html>

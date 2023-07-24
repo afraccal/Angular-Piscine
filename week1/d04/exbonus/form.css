@@ -1,0 +1,75 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg?t=st=1689754719~exp=1689758319~hmac=f99ad56ef8399e46ef0dc1bda144c4af0d1c9c466ea393cf491fe323a502f355&w=2000);
+}
+
+#newform {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+	align-items:center;
+    border: 2px solid;
+    border-radius: 10px;
+    align-items: center;
+    width: 50%; 
+    border-color: black;
+    padding: 20px;
+    background-color:brown;
+}
+
+.mydiv{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+button
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: black;
+	border-radius: 5px;
+	border: 1px solid black;
+	color: white;
+	transition: 0.3s;
+}
+
+button:hover
+{
+	scale: 1.03;
+	background-color: beige;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.title
+{
+	width: 90%;
+	display: flex;
+    align-items:center;
+	justify-content: center;
+    border: 2px solid;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: olive;
+}
+
+p
+{
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+    padding: 0;
+	margin: 0; 
+}

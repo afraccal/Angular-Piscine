@@ -1,0 +1,41 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s;
+    width: 40%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: rotate(360deg);
+}
+
+.container {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.c {
+    background-color: black;
+}
+
+.b {
+    background-color: blue;
+}
+
+.contact {
+    background-color: brown;
+}
+
+.duplicate {
+    text-align: right;
+}

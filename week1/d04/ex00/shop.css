@@ -1,0 +1,189 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.heading {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.heading h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.cart_icon {
+  font-size: 24px;
+  display: flex;
+
+}
+
+.inside {
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+  display: flex;
+  background-color: wheat;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.imagine {
+    background-color:white;
+    object-fit: cover;
+    border-radius: 10 px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.switcher {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 14px 20px;
+  float: left;
+}
+
+.riga {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  background-color: wheat;
+  width: 30%;
+  border-radius: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: wheat;
+}
+.menu
+{
+	border-radius: 5px;
+}
+
+.menu:hover .block
+{
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #232F3E;
+}
+
+.menu:hover
+{
+	border: 2px solid white;
+}
+
+.block
+{
+	position:absolute;
+	display: none;
+	color: black;
+	background-color: white;
+	width: 100px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 20px;
+}
+
+.right
+{
+	display:flex;
+	float: center;
+	width: 50%;
+	height: 100%;
+	padding-right: 30px;
+	color: antiquewhite;
+}
