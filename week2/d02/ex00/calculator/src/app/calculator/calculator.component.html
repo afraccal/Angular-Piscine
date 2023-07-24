@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Calculator</h2>
+    <div class="inputs">
+        <input type="text" id="first" (keyup)="check_first($event)">
+        <select id="operator" (change)="op($event)">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="last" (keyup)="check_last($event)">
+    </div>
+    <button (click)="calc()">Calculate me, baby!!</button>
+    <div class="result">
+        <h1>{{result}}</h1>
+    </div>
+</div>
