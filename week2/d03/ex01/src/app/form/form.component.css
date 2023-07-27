@@ -1,0 +1,35 @@
+form
+{
+	width: 40vw;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+
+}
+
+input
+{
+	width: 90%;
+}
+
+button
+{
+	background-color: black;
+	width: 50%;
+	border: 2px solid black;
+	border-radius: 5px;
+	color: aliceblue;
+	transition: 0.3;
+}
+
+button:hover
+{
+	scale: 1.03;
+	transition: 0.3s;
+	cursor: pointer;
+}

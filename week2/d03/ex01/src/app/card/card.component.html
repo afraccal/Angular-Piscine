@@ -1,0 +1,11 @@
+<body>
+    <div class="card_container">
+        <div class="card_body" *ngIf="form">
+            <h2>{{form.title}}</h2>
+            <div class="image"><img src="{{form.image}}"></div>
+            <p>{{form.description}}</p>
+            <h5>{{form.price}} $</h5>
+            <h4>{{form.category}}</h4>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,14 @@
+<div id="nav">
+	<div class="left">
+		<div class="menu">
+			<div class="drop"><h1>Menu</h1></div>
+			<div class="block">
+				<div class="menu_item" (click)="listIt()">
+					<h3 *ngIf="view">Table view</h3>
+					<h3 *ngIf="!view">Card view</h3>
+				</div>
+			</div>
+		</div>
+		<div class="switcher" (click)="listIt()"><h1 id="switcher">list</h1></div>
+	</div>
+</div>
